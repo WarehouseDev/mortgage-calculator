@@ -82,7 +82,7 @@ export default function Form({ onCalculateMortgage, onReset }) {
       <div className="term-rate">
         <div className="form-control">
           <label htmlFor="term">Mortgage Term</label>
-          <div className={`info ${errors.amount ? "error" : ""}`}>
+          <div className={`info ${errors.term ? "error" : ""}`}>
             <input
               type="number"
               min="1"
@@ -97,7 +97,7 @@ export default function Form({ onCalculateMortgage, onReset }) {
         </div>
         <div className="form-control">
           <label htmlFor="rate">Interest Rate</label>
-          <div className={`info ${errors.amount ? "error" : ""}`}>
+          <div className={`info ${errors.rate ? "error" : ""}`}>
             <input
               type="number"
               min="0"
